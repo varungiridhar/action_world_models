@@ -378,6 +378,17 @@ python -m app.main_distributed \
 Post-training of the action-conditioned model, starting from the pretrained VJEPA 2 backbone, also follows a similar interface, and can be run locally or distributed using [this config](configs/train/vitg16/droid-256px-8f.yaml).
 We post-train the model starting from the ViT-g/16 backbone.
 
+#### New Features (TODOs)
+- [ ] Different PVRs:
+    - [ ] DinoV2 (+ R3M, ResNet)
+    - [ ] ...
+- [ ] Environment wrappers and offline dataset loaders
+    - [ ] (optional) parallel environment interaction for planning evaluation
+    - [ ] (optional) multi-view camera support
+- [ ] Add reward / value head for RL finetuning
+- [ ] Task-specific decoders
+- [ ] BC baselines
+
 #### Local
 
 ```
